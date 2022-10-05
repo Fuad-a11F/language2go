@@ -1,0 +1,47 @@
+@import "../../assets/styles/variables";
+
+.button {
+  padding: 12px 18px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  background: map-get($background-colors, purple);
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  color: map-get($background-colors, white);
+  cursor: pointer;
+  transition: .4s;
+
+  &:hover {
+    background: mix(black, map-get($background-colors, purple), 20%);
+  }
+
+  &--outline {
+    background: map-get($background-colors, white);
+    border: 1px solid map-get($background-colors, purple);
+    color: map-get($background-colors, purple);
+    font-weight: 400;
+
+    &:hover {
+      background: map-get($background-colors, purple);
+      color: map-get($background-colors, white);
+    }
+  }
+
+  &--outline {
+    background: map-get($background-colors, white);
+    border: 1px solid map-get($background-colors, purple);
+    color: map-get($background-colors, purple);
+    font-weight: 400;
+
+    &:hover {
+      background: map-get($background-colors, purple);
+      color: map-get($background-colors, white);
+    }
+  }
+
+  &:disabled {
+    background-color: map-get($background-colors, gray);;
+    cursor: auto;
+  }
+}

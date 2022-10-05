@@ -1,0 +1,47 @@
+@import "../../assets/styles/variables";
+
+.footer {
+  padding: 60px 0 90px 0;
+  background-color: map-get($background-colors, purple);
+  color: map-get($background-colors, white);
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  }
+
+  &__cards {
+    display: flex;
+
+    li {
+      margin-right: 10px;
+      margin-top: 18px;
+    }
+  }
+
+  &__list {
+    &-item {
+      max-width: 300px;
+      margin-top: 26px;
+    }
+  }
+
+  ul {
+    padding: 0;
+    margin-top: -8px;
+  }
+
+  li {
+    list-style: none;
+    opacity: 0.8;
+    letter-spacing: 0.02em;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1470px;
+}

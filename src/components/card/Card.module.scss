@@ -1,0 +1,62 @@
+@import "../../assets/styles/variables";
+
+.card {
+  padding: 40px;
+  max-width: 453px;
+  box-sizing: border-box;
+  border-radius: 10px;
+
+  &:hover {
+    cursor: pointer;
+
+    .card__title  {
+      color: map-get($background-colors, purple);
+    }
+  }
+
+  &__german {
+    background: map-get($background-colors, blue);
+
+    &:hover {
+      box-shadow: 0 4px 20px rgba(81, 163, 217, 0.3);
+    }
+  }
+
+  &__spain {
+    background: map-get($background-colors, purple-extralight);
+
+    &:hover {
+      box-shadow: 0 4px 20px rgba(81, 163, 217, 0.3);
+    }
+  }
+
+  &__china {
+    background: map-get($background-colors, pink);
+
+    &:hover {
+      box-shadow: 0 4px 20px rgba(228, 33, 37, 0.3);
+    }
+  }
+
+  &__img  {
+    width: 50px;
+    height: 50px;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+
+  }
+
+  &__title {
+    margin: 20px 0;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+}
